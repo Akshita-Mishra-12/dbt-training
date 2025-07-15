@@ -6,10 +6,12 @@ o.shipmode,
 ordersellingprice - ordercostprice as orderprofit,
 --from raw_customer
 c.customername,
+c.customerid,
 c.segment,
 c.country,
 -- from raw_product
 p.category,
+p.productid,
 p.productname,
 p.subcategory,
 ---from RAW.GLOBALMART.ORDERS   this will pick data from snowflake
