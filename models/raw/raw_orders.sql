@@ -8,4 +8,5 @@
 -- dbt run --select raw will execute only mentioned model or folder
 
 select * 
-from RAW.GLOBALMART.ORDERS
+-- from RAW.GLOBALMART.ORDERS
+from {{ source('globalmart', 'orders') }}
